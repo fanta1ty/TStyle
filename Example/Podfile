@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'TStyle_Example' do
+  pod 'TStyle', :path => '../'
+
+  target 'TStyle_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

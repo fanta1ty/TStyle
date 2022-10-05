@@ -1,0 +1,16 @@
+PODS:
+  - TStyle (1.0.0)
+
+DEPENDENCIES:
+  - TStyle (from `../`)
+
+EXTERNAL SOURCES:
+  TStyle:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TStyle: b2eaed4c615883d03c9f8b0898a6050eba858735
+
+PODFILE CHECKSUM: ecbc5b3b260cd1928eb186731eb3432f1f4b451d
+
+COCOAPODS: 1.11.3
