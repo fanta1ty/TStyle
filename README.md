@@ -1,4 +1,4 @@
-![LOGO](https://github.com/fanta1ty/TSwitchLabel/blob/master/ScreenShot/Logo.png)
+![LOGO](https://github.com/fanta1ty/TStyle/blob/master/ScreenShot/Logo.png)
 
 # TStyle
 
