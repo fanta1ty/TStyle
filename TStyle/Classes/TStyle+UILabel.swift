@@ -52,13 +52,36 @@ public extension TStyle where View: UILabel {
         return self
     }
 
-    func textWithColor(_ value: String, color: UIColor, coloredTexts: [String]) -> Self {
+    func textWithColor(_ value: String,
+                       color: UIColor,
+                       coloredTexts: [String]) -> Self {
         styling.append { label in
             let attributedString = NSMutableAttributedString(string: value)
             for coloredText in coloredTexts {
                 let range = (value as NSString).range(of: coloredText)
                 attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
             }
+            label.attributedText = attributedString
+        }
+        return self
+    }
+    
+    func textWithColor(_ value: String,
+                       color: UIColor,
+                       coloredTexts: [String],
+                       valueFont: UIFont,
+                       coloredFonts: [UIFont]) -> Self {
+        styling.append { label in
+            let attributedString = NSMutableAttributedString(string: value)
+             
+            for (index, coloredText) in coloredTexts.enumerated() {
+                let range = (value as NSString).range(of: coloredText)
+                let itemFont = coloredFonts[index]
+                
+                attributedString.addAttribute(.foregroundColor, value: color, range: range)
+                attributedString.addAttribute(.font, value: itemFont, range: range)
+            }
+            
             label.attributedText = attributedString
         }
         return self
