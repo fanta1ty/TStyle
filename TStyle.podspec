@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TStyle'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'TStyle is a simple and flexible UI component fully written in Swift.'
   s.description      = 'TStyle is a simple and flexible UI component fully written in Swift. TStyle is developed to help users quickly define attributes detail without having to define from scratch'
   s.homepage         = 'https://github.com/fanta1ty/TStyle'
