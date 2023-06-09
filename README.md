@@ -8,6 +8,7 @@ TStyle is a simple and flexible UI component fully written in Swift. TStyle is d
 [![Version](https://img.shields.io/cocoapods/v/TStyle.svg?style=flat)](https://cocoapods.org/pods/TStyle)
 [![License](https://img.shields.io/cocoapods/l/TStyle.svg?style=flat)](https://cocoapods.org/pods/TStyle)
 [![Platform](https://img.shields.io/cocoapods/p/TStyle.svg?style=flat)](https://cocoapods.org/pods/TStyle)
+[![Email](https://img.shields.io/badge/contact-@thinhnguyen12389@gmail.com-blue)](thinhnguyen12389@gmail.com)
 
 ## Example
 
@@ -17,11 +18,24 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-TStyle is available through [CocoaPods](https://cocoapods.org). To install
+### From CocoaPods
+`TStyle` is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'TStyle'
+```
+
+Second, install `TProgressHUD` into your project:
+```ruby
+pod install
+```
+
+### Swift Package
+`TProgressHUD` is designed for Swift 5. To depend on the logging API package, you need to declare your dependency in your `Package.swift`
+
+```swift
+.package(url: "https://github.com/fanta1ty/TStyle.git", brand: "master"),
 ```
 
 ## Usage

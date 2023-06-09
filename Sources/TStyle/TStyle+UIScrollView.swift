@@ -6,5 +6,6 @@
 //
 
 import Foundation
-public extension TStyle where View: UIScrollView {
-}
+import UIKit
+
+public extension TStyle where View: UIScrollView {}

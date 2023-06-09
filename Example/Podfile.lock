@@ -1,5 +1,5 @@
 PODS:
-  - TStyle (1.0.1)
+  - TStyle (1.0.3)
 
 DEPENDENCIES:
   - TStyle (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TStyle: 705b07db1891142671757e14bf15b32641ed81d8
+  TStyle: c5ce4a8e96b37e1648f956b9b4d29c533a0f8f4a
 
 PODFILE CHECKSUM: ecbc5b3b260cd1928eb186731eb3432f1f4b451d
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

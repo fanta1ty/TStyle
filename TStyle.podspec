@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TStyle'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'TStyle is a simple and flexible UI component fully written in Swift.'
   s.description      = 'TStyle is a simple and flexible UI component fully written in Swift. TStyle is developed to help users quickly define attributes detail without having to define from scratch'
   s.homepage         = 'https://github.com/fanta1ty/TStyle'
@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.author           = { 'fanta1ty' => 'thinhnguyen12389@gmail.com' }
   s.source           = { :git => 'https://github.com/fanta1ty/TStyle.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
-  s.source_files = 'TStyle/Classes/**/*'
+  s.platform = :ios, '11.0'
+  s.source_files = 'Sources/TStyle/**/*.{swift}'
   s.swift_version = '5.0'
 end

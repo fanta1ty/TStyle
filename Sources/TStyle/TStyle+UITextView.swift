@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 public extension TStyle where View: UITextView {
-
     func text(_ value: String) -> Self {
         styling.append { view in
             view.text = value

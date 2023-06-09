@@ -6,9 +6,9 @@
 //  Copyright (c) 2022 thinhnguyen12389. All rights reserved.
 //
 
-import UIKit
-import TStyle
 import Foundation
+import TStyle
+import UIKit
 
 class ViewController: UIViewController {
     private let exampleLabel = UILabel()
@@ -16,10 +16,10 @@ class ViewController: UIViewController {
     private let exampleImageView = UIImageView()
     private let exampleStackView = UIStackView()
     private let exampleView = UIView()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         addSubviews()
         setupSubviews()
         setupLayout()
@@ -32,10 +32,10 @@ extension ViewController {
         exampleStackView.addArrangedSubview(exampleButton)
         exampleStackView.addArrangedSubview(exampleImageView)
         exampleStackView.addArrangedSubview(exampleView)
-        
+
         view.addSubview(exampleStackView)
     }
-    
+
     private func setupSubviews() {
         TStyle<UILabel>()
             .autolayout()
@@ -46,7 +46,7 @@ extension ViewController {
             .accessibilityIdentifier("label.example")
             .text("Example Label")
             .apply(to: exampleLabel)
-        
+
         TStyle<UIButton>()
             .autolayout()
             .font(.systemFont(ofSize: 16))
@@ -78,13 +78,13 @@ extension ViewController {
             .accessibilityIdentifier("view.example")
             .apply(to: exampleView)
     }
-    
+
     private func setupLayout() {
         NSLayoutConstraint.activate([
             exampleStackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             exampleStackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             exampleStackView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            exampleStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+            exampleStackView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
     }
 }

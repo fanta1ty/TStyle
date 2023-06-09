@@ -17,7 +17,7 @@ public extension UIImage {
             UIRectFill(bounds)
         }
     }
-    
+
     static func circle(withDiameter diameter: CGFloat, color: UIColor) -> UIImage {
         roundedRect(
             withSize: .init(width: diameter, height: diameter),
@@ -25,10 +25,14 @@ public extension UIImage {
             cornerRadius: diameter / 2
         )
     }
-    
-    static func roundedRect(withSize size: CGSize,
-                            color: UIColor,
-                            cornerRadius: CGFloat) -> UIImage {
+
+    static func roundedRect(
+        withSize size: CGSize,
+        color: UIColor,
+        cornerRadius: CGFloat
+    )
+        -> UIImage
+    {
         let bounds = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         let renderer = UIGraphicsImageRenderer(bounds: bounds)
 
@@ -39,7 +43,7 @@ public extension UIImage {
             UIRectFill(bounds)
         }
     }
-    
+
     func withPadding(_ padding: CGFloat) -> UIImage? {
         withPadding(x: padding, y: padding)
     }
