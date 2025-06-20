@@ -418,7 +418,7 @@ Contributions are welcome! Please follow these guidelines:
 
 ## Author
 
-Created by Nguyen, Thinh - thinhnguyen12389@gmail.com
+Created by Thinh, Nguyen - Email: thinhnguyen12389@gmail.com
 
 ## License
 
